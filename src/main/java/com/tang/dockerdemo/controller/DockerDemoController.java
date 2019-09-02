@@ -21,6 +21,9 @@ public class DockerDemoController {
     @ResponseBody
     public String dockerTest() {
         logger.info("进入方法：dockerTest()");
+        int i = 10;
+        int j = 20;
+        logger.info("{} + {} = {}", i, j, i + j);
         return "hello Docker!";
     }
 
